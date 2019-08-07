@@ -1,11 +1,26 @@
 # HxCalendarView
 
-自由定制的日历view，提供简易扩展接口，轻松实现想要的样式
+自由定制的日历view，提供简易扩展接口，轻松实现想要的样式    
+Freely customizable calendar view with easy extension interface for easy implementation of the desired style  
+
+<p align="center">
+	<img src="https://github.com/huage2580/HxCalendarView/blob/master/img/device-2019-08-07-113125.png" alt="Sample"  width="300" >
+	<p align="center">
+		<em>示例</em>
+	</p>
+</p>
+<p align="center">
+	<img src="https://github.com/huage2580/HxCalendarView/blob/master/img/gif_0807.gif" alt="Sample"  width="300" >
+	<p align="center">
+		<em>use in pageView</em>
+	</p>
+</p>
 
 ## Getting Started
 复制 `HxCalendarView.dart` ,`HxDefaultRender.dart`到你的项目  
-
+copy `HxCalendarView.dart` ,`HxDefaultRender.dart` to your project
 参考 TestWidget  
+simple use ,like TestWidget 
 ```dart
 class TestState extends State{
   HxSingleSelectItemRender itemSelectRender;
@@ -36,7 +51,7 @@ class TestState extends State{
 }
 ```
 
-## 主要的日历视图 属性  
+## 主要的日历视图 属性  (attribute
 ```dart
  //show top header like [sun ,mon,tue,wed...]
   bool showHeader = false;
@@ -50,7 +65,7 @@ class TestState extends State{
   // = width / height
   num itemAspectRatio = 1.0;
 ```
-## 在pageView中使用  
+## 在pageView中使用  (use in PageView
 参考 : PageViewTest.dart
 ```dart
 class TState extends State<Test>{
@@ -127,10 +142,10 @@ class TState extends State<Test>{
   }
 }
 ```
-## 自定义  
+## 自定义  (how to custom your style
 默认视图样式在`HxDefaultRender.dart`  
-标题渲染:`calendarBuilder.headerRender = HxDefaultHeaderRender();`  
-日历渲染: `calendarBuilder.addItemRender(HxDefaultItemRender());`  
+标题渲染(header render):`calendarBuilder.headerRender = HxDefaultHeaderRender();`  
+日历渲染(the days item): `calendarBuilder.addItemRender(HxDefaultItemRender());`  
 参考实现  
 ```dart
 class HxDefaultItemRender extends HxCalendarItemRender{
